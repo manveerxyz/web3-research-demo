@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: calc(100% - 48px);
+  padding: 24px 24px 0 24px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 40px;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logoContainer:hover {
+  cursor: pointer;
+}
+.logoContainer span {
+  font-family: 'Source Serif Pro';
+  font-weight: bold;
+  font-size: var(--font-size-h4);
+  color: var(--black);
+}
+.logoContainer img {
+  width: 24px;
+  margin-right: 12px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 32px);
+    padding: 16px 16px 0 16px;
+  }
+}

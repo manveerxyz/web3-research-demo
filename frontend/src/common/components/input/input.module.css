@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+}
+
+.input {
+  height: 44px;
+  border: 1px solid var(--grey-300);
+  font-family: 'Lato';
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border-color: var(--primary);
+}
+.error {
+  border-color: var(--danger);
+}
+.input:disabled {
+  border-color: var(--grey-200);
+}
+
+.helpText {
+  font-size: var(--font-size-sm);
+  color: var(--grey-600);
+  margin-top: 2px;
+}
