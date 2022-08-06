@@ -1,0 +1,8 @@
+{
+  // we want to include our test files for linting
+  "extends": "./tsconfig.json",
+  "include": [
+    "src",
+  ],
+  "exclude": []
+}

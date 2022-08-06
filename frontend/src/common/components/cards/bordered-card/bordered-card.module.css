@@ -1,0 +1,11 @@
+.container {
+  padding: 24px;
+}
+
+.grey {
+  border: 2px solid var(--grey-200);
+}
+
+.black {
+  border: 2px solid var(--black);
+}

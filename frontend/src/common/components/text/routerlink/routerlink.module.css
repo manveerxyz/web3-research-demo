@@ -1,0 +1,15 @@
+.underlined {
+  text-decoration: underline;
+  color: var(--black);
+}
+.underlined:hover {
+  text-decoration: none;
+}
+
+.notUnderlined {
+  text-decoration: none;
+  color: var(--black);
+}
+.notUnderlined:hover {
+  text-decoration: underline;
+}

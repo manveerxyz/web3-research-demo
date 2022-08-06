@@ -1,0 +1,10 @@
+.error {
+  font-size: var(--font-size-p);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--danger);
+}
+
+.small {
+  font-size: var(--font-size-sm);
+}

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es2019",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": "./",
+    "strict": true,
+    "paths": {
+      "src/*": [
+        "./src/*"
+      ],
+    },
+    "plugins": [
+      { "transform": "typescript-transform-paths" },
+    ]
+  },
+  "include": [
+    "src"
+  ],
+  "compileOnSave": true
+}
