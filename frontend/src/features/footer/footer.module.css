@@ -1,0 +1,36 @@
+.container {
+  width: calc(100% - 128px);
+  height: 108px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary);
+  padding: 0 64px;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+    width: calc(100% - 32px);
+  }
+}
+
+.rights {
+  color: white;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+
+.icon {
+  padding: 8px;
+}
+.icon:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,223 @@
+@import-normalize;
+
+*:focus {
+  outline: none;
+}
+
+:root {
+  /* Colors */
+  --primary: #121212;
+
+  --danger: #F44336;
+
+  --black: #121212;
+  --grey-900: #212121;
+  --grey-800: #424242;
+  --grey-700: #616161;
+  --grey-600: #757575;
+  --grey-500: #9E9E9E;
+  --grey-300: #E0E0E0;
+  --grey-200: #EEEEEE;
+  --grey-100: #F5F5F5;
+
+  /* Font Sizes */
+  --font-size-h1: 2.488rem; /*39.808px*/
+  --font-size-h2: 2.074rem; /*33.184px*/
+  --font-size-h3: 1.728rem; /*27.648px*/
+  --font-size-h4: 1.44rem; /*23.04px*/
+  --font-size-h5: 1.2rem; /*19.2px*/
+  --font-size-p: 1rem; /*16px*/
+  --font-size-sm: 0.833rem; /*13.328px*/
+}
+
+/* Lato */
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(./fonts/Lato-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 300;
+  font-style: italic;
+  src: local('Lato Light Italic'), url(./fonts/Lato-LightItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  src: local('Lato'), local('Lato'), local('Lato-Regular'), url(./fonts/Lato-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style: italic;
+  src: local('Lato Italic'), local('Lato-Italic'), url(./fonts/Lato-Italic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 500;
+  src: local('Lato Medium'), local('Lato-Medium'), url(./fonts/Lato-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 500;
+  font-style: italic;
+  src: local('Lato Medium Italic'), local('Lato-MediumItalic'), url(./fonts/Lato-MediumItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 600;
+  src: local('Lato Semibold'), local('Lato-Semibold'), url(./fonts/Lato-Semibold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 600;
+  font-style: italic;
+  src: local('Lato Semibold Italic'), local('Lato-SemiboldItalic'), url(./fonts/Lato-SemiboldItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(./fonts/Lato-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-style: italic;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(./fonts/Lato-BoldItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(./fonts/Lato-Black.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 900;
+  font-style: italic;
+  src: local('Lato Black Italic'), local('Lato-BlackItalic'), url(./fonts/Lato-BlackItalic.ttf) format('truetype');
+}
+
+/* Source Serif */
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 300;
+  src: local('Source Serif Pro Light'), local('SourceSerifPro-Light'), url(./fonts/SourceSerifPro-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 300;
+  font-style: italic;
+  src: local('Source Serif Pro Light Italic'), url(./fonts/SourceSerifPro-LightItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 400;
+  src: local('Source Serif Pro'), local('Source Serif Pro'), local('SourceSerifPro-Regular'), url(./fonts/SourceSerifPro-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 400;
+  font-style: italic;
+  src: local('Source Serif Pro Italic'), local('SourceSerifPro-Italic'), url(./fonts/SourceSerifPro-Italic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 600;
+  src: local('Source Serif Pro SemiBold'), local('Lato-SemiBold'), url(./fonts/SourceSerifPro-SemiBold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 600;
+  font-style: italic;
+  src: local('Source Serif Pro SemiBold Italic'), local('Lato-SemiBoldItalic'), url(./fonts/SourceSerifPro-SemiBoldItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 700;
+  src: local('Source Serif Pro Bold'), local('SourceSerifPro-Bold'), url(./fonts/SourceSerifPro-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 700;
+  font-style: italic;
+  src: local('Source Serif Pro Bold Italic'), local('SourceSerifPro-BoldItalic'), url(./fonts/SourceSerifPro-BoldItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 900;
+  src: local('Source Serif Pro Black'), local('SourceSerifPro-Black'), url(./fonts/SourceSerifPro-Black.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 900;
+  font-style: italic;
+  src: local('Source Serif Pro Black Italic'), local('SourceSerifPro-BlackItalic'), url(./fonts/SourceSerifPro-BlackItalic.ttf) format('truetype');
+}
+
+/* Source Code Pro */
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-weight: 500;
+  src: local('Source Code Pro Medium'), local('SourceCodePro-Medium'), url(./fonts/SourceCodePro-Medium.ttf) format('truetype');
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Type Scale */
+
+html {font-size: 100%;} /*16px*/
+
+h1, h2, h3, h4, h5, p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Source Serif Pro';
+  font-size: 2.488rem; /*39.808px*/
+  font-weight: 800;
+} 
+
+h2 {
+  font-family: 'Source Serif Pro';
+  font-size: 2.074rem; /*33.184px*/
+  font-weight: 800;
+}
+
+h3, .text-3 {
+  font-family: 'Source Serif Pro';
+  font-size: 1.728rem; /*27.648px*/
+  font-weight: 700;
+} 
+
+h4, .text-4 {
+  font-size: 1.44rem; /*23.04px*/
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1.2rem; /*19.2px*/
+  font-weight: bold;
+} 
+
+small, .text_small {font-size: 0.833rem;} /*13.328px*/

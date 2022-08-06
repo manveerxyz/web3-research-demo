@@ -1,0 +1,28 @@
+.underlined {
+  text-decoration: underline;
+  color: var(--black);
+  cursor: pointer;
+}
+.underlined:hover {
+  text-decoration: none;
+}
+
+.notUnderlined {
+  text-decoration: none;
+  color: var(--black);
+  cursor: pointer;
+}
+.notUnderlined:hover {
+  text-decoration: underline;
+}
+
+.white {
+  color: white;
+}
+.grey {
+  color: var(--grey-600);
+}
+
+.bold {
+  font-weight: bold;
+}
