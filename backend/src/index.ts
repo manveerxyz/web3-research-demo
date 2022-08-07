@@ -9,6 +9,7 @@ import { addRoutes as addIPFSRoutes } from './ipfs/routes';
 import { addRoutes as addWaitlistsRoutes } from './waitlists/routes';
 import sentry from 'src/common/sentry';
 import limiter from 'src/middleware/limiter';
+import { initCache } from 'src/common/cache';
 
 const PORT = process.env.PORT || 5000;
 const AllowedOrigins = ['http://usescholar.org', 'https://usescholar.org'];
@@ -19,6 +20,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 initConnectionPool();
+initCache();
 
 const app = express();
 

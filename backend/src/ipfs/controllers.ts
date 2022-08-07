@@ -1,5 +1,7 @@
 import axios, { Method } from 'axios';
 import { Request, Response } from 'express';
+import { StatusCodes } from 'http-status-codes';
+import cache from 'src/common/cache';
 
 import log from 'src/common/log';
 
@@ -15,6 +17,14 @@ export async function ipfsProxy(req: Request, res: Response) {
     url = url.replace('https:/', 'https://');
   }
 
+  // check if we've recently fetched this url and cached the response
+  const cachedResp = cache.get(url);
+  if (cachedResp) {
+    log.debug('found cached response', { url });
+    res.status(StatusCodes.OK).send(cachedResp);
+    return;
+  }
+
   // eslint-disable-next-line security/detect-object-injection
   log.info(`forwarding proxy request to: ${method} ${url}`);
 
@@ -24,5 +34,9 @@ export async function ipfsProxy(req: Request, res: Response) {
     params: req.query,
   });
   log.info(`proxy response: ${response.status}`);
+
+  // cache the response
+  cache.set(url, response.data);
+
   res.status(response.status).send(response.data);
 }
