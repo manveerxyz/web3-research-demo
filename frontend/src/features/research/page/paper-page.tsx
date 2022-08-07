@@ -4,7 +4,7 @@ import Header from 'common/components/text/header/header';
 import Paragraph from 'common/components/text/paragraph/paragraph';
 import FixedWidthPageLayout from 'common/layouts/fixed-width-page/fixed-width-page';
 import FooterLayout from 'common/layouts/footer/footer';
-import SimpleListItem from 'common/components/list-items/simple-list-item/simple-list-item';
+import ResearchArtifactItem from 'features/research/artifact-item/artifact-item';
 import Routerlink from 'common/components/text/routerlink/routerlink';
 import LoadingLayout from 'common/layouts/loading-layout/loading-layout';
 import OpenInNewSharpIcon from '@mui/icons-material/OpenInNewSharp';
@@ -64,7 +64,7 @@ const PaperPage = ({
                     <div className={styles.section} key={type}>
                       <Header size="h5">{toTitleCase(type)}</Header>
                       {(artifacts as Paper['artifacts']).map((artifact) => (
-                        <SimpleListItem
+                        <ResearchArtifactItem
                           key={artifact.display_name}
                           title={artifact.display_name}
                           subtitle={new URL(artifact.url).pathname.substring(1)}

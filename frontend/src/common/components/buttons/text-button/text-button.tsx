@@ -5,7 +5,7 @@ import styles from './text-button.module.css';
 export type PropTypes = {
   href?: string
   onClick?: () => void
-  children: string | ReactElement
+  children: string | ReactElement | ReactElement[]
   underlined?: boolean
   bold?: boolean
   color?: 'black' | 'grey' | 'white'

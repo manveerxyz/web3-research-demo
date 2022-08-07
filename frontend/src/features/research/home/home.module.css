@@ -34,8 +34,11 @@
 }
 
 .buttonContainer {
-  max-width: 144px;
+  max-width: 360px;
   margin-bottom: 48px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
 }
 
 @media (max-width: 1024px) {
@@ -58,5 +61,6 @@
 
   .buttonContainer {
     max-width: unset;
+    flex-direction: column;
   }
 }

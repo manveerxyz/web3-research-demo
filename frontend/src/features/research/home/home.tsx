@@ -32,7 +32,8 @@ const ResearchHome = () => (
             Research represented on-chain&mdash;on an open and shared database&mdash;with links
             to all research artifacts, so anyone can access it.<br /><br />
             Since research output is represented in <TextButton href="https://ethereum.org/en/developers/docs/smart-contracts/" underlined>smart contracts</TextButton>
-            , it&apos;s timestamped for provenance, composable with function calls,
+            , it&apos;s timestamped for provenance, has a clear version history,
+            anyone can build on top of it,
             and researchers can truly own their scientific output.
           </Paragraph>
         </div>
@@ -45,11 +46,12 @@ const ResearchHome = () => (
           <Paragraph style={{ marginBottom: '48px' }}>
             Store all research artifacts permanently, in tamper-proof storage.<br /><br />
             Nobody can censor it, and there&apos;s no fear of losing access to valuable
-            scientific knowledge.
+            parts of the scientific record.
           </Paragraph>
 
           <div className={styles.buttonContainer}>
-            <Button text="View Demo" routerLink="/research/0" size="large" />
+            <Button text="View Demo" routerLink="/research/0" style={{ width: '100%' }} />
+            <Button text="Source Code" variant="secondary" href="https://github.com/ManveerBasra/web3-research-demo" style={{ width: '100%' }} />
           </div>
         </div>
       </div>
