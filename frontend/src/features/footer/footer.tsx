@@ -1,19 +1,18 @@
 import React from 'react';
 
 import Twitter from 'img/twitter-white.svg';
-import Github from 'img/github-white.svg';
-import TextButton from 'common/components/buttons/text-button/text-button';
+import Discord from 'img/discord-white.svg';
 
 import styles from './footer.module.css';
 
 const Footer = () => (
   <div className={styles.container}>
-    <span className={styles.rights}>Created by <TextButton href="https://twitter.com/manveerbasra_" color="white" underlined>Manveer Basra</TextButton></span>
+    <span className={styles.rights}>© Scholar 2022</span>
     <div className={styles.iconContainer}>
-      <a className={styles.icon} href="https://github.com/ManveerBasra/web3-research-demo" target="_blank" rel="noreferrer">
+      <a className={styles.icon} href="https://discord.gg/tJmw3UdYZV" target="_blank" rel="noreferrer">
         <img
-          src={Github}
-          alt="Github Logo"
+          src={Discord}
+          alt="Discord Logo"
           width="24px"
           height="24px"
         />

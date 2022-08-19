@@ -1,4 +1,4 @@
-import WaitlistContainer from 'features/home/waitlist/waitlist-container';
+import LandingContainer from 'features/home/landing/landing-container';
 import PaperPageContainer from 'features/research/page/paper-page-container';
 import CitationsContainer from 'features/research/citations/citations-container';
 import ResearchHomeContainer from 'features/research/home/home-container';
@@ -7,7 +7,7 @@ import { Routes, Route } from 'react-router-dom';
 
 const Router = () => (
   <Routes>
-    <Route path="/" element={<WaitlistContainer />} />
+    <Route path="/" element={<LandingContainer />} />
 
     <Route path="research">
       <Route index element={<ResearchHomeContainer />} />

@@ -50,8 +50,7 @@ const ResearchHome = () => (
           </Paragraph>
 
           <div className={styles.buttonContainer}>
-            <Button text="View Demo" routerLink="/research/0" style={{ width: '100%' }} />
-            <Button text="Source Code" variant="secondary" href="https://github.com/ManveerBasra/web3-research-demo" style={{ width: '100%' }} />
+            <Button text="Continue" routerLink="/research/0" style={{ width: '100%' }} />
           </div>
         </div>
       </div>
